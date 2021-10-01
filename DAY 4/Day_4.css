@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.outerCircle {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border: 4px solid gray;
+}
+
+.innerCircle {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid gray;
+  position: relative;
+}
+
+.minutes-container,
+.hours-container,
+.seconds-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hours {
+  background: #000;
+  height: 48%;
+  left: 49%;
+  position: absolute;
+  top: 2%;
+  transform-origin: 50% 100%;
+  width: 1%;
+  transform: rotateZ(135deg);
+}
+
+.minutes {
+  background: #000;
+  height: 48%;
+  left: 49%;
+  position: absolute;
+  top: 2%;
+  transform-origin: 50% 100%;
+  width: 1%;
+  transform: rotateZ(165deg);
+}
+
+.seconds {
+  background: #000;
+  height: 48%;
+  left: 49%;
+  position: absolute;
+  top: 2%;
+  transform-origin: 50% 100%;
+  width: 1%;
+  transform: rotateZ(195deg);
+}
